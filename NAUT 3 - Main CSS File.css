@@ -2996,3 +2996,161 @@
 
 
 ==================================================================================================================================*/
+
+
+#header .pagename a {
+   /*background-image: url(%%logo%%);
+   background-size: 250px;*/
+}
+
+/* --- Addon: Header Background Image --- */
+.content:before {
+    background-color: #367cdf;
+    background-image: none;
+}
+
+#header .tabmenu li a, .pagename a {text-shadow: 0px 0px 0px rgba(0, 0, 0, 0);}
+/* --- End Addon --- */
+
+
+/* --- Addon: Button color (Secondary Color) --- */
+.morelink, .titlebox .fancy-toggle-button .add, .morelink:after, .content .infobar,
+.submit-page #newlink.submit.content .tabmenu.formtab .selected a, .submit-page .infobar, 
+.submit-page #newlink.submit.content .btn, .drop-choices a.choice:hover, .linkflairlabel, .fancy-toggle-button .remove:active
+.expando-button:hover, .top-page .content .menuarea .dropdown.lightdrop .selected, .expando-button:hover, .side .titlebox .md h3 a,
+.res div.RES-keyNav-activeElement, .res div.commentarea div.RES-keyNav-activeElement.entry div.noncollapsed {background-color: #4CAF50}
+
+    /* Hover color = 10% white overlay color */
+    .morelink:hover, .submit-page #newlink.submit.content .tabmenu.formtab .selected a:hover,
+    .side .titlebox .md h3 a:hover, .titlebox .fancy-toggle-button .add:hover, .titlebox .fancy-toggle-button .add:hover:after
+     {background-color: #5eb762;}
+
+    /* Active color = 10% black overlay color */
+    .morelink:active, .side .titlebox .md h3 a:active {background-color: #449d48;}
+/* --- End Addon --- */
+
+
+/* --- Addon: Link Color (Tertiary Color) - This color should be either similiar to the primary color, 
+or to the secondary color. Else the page will become too busy.-- */
+a, .link .entry .buttons li a.comments, .md a, .titlebox .tagline a.flairselectbtn, 
+.thing .title.loggedin.click, .thing .title.click, .thing .title.loggedin, .thing .title, 
+body .content .sitetable .link .title a:hover, .link .domain a:hover, .link .entry .buttons li a:hover, 
+.link .entry .buttons li a.flairselectbtn, .comment .flat-list li a[onclick*="reply"], 
+.comment .flat-list li a:hover, .tagline .submitter, .tagline .submitter, .side:after, 
+.usertext .bottom-area a.reddiquette, .side .titlebox .md h6 a
+ {color: #5b92fa;}
+/* --- End Addon --- */
+
+
+/* FLAIR SELECTOR FIX */
+.flairselector {
+    margin: 0 !important;
+    max-height: 90%;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%);
+}
+
+
+/* FLAIRS */
+.flair {
+  height: auto;
+  background-color: transparent;
+  border: none;
+  color: #555;
+  font-size: 11px!important;
+  font-family: Verdana,sans-serif;
+  cursor: default;
+  margin-left: 5px;
+  margin-right: 3px;
+  color: #fff;
+  font-weight: 400;
+  padding-left: 5px;
+  border-radius: 7px;
+  padding-right: 4px;
+  transition: all .25s ease;
+}
+
+.flair:before {
+   margin-right: 0px;
+   height: 0px;
+   content: "";
+   margin-left: 0px;
+}
+
+.flair-androidwear:after, .flair-moto360black:after, .flair-moto360silver:after, .flair-moto360gold:after, .flair-motoemployee:after {
+  color: #fff;
+  display: inline-block;
+  font-weight: 800;
+  height: 18px;
+  padding-top: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  font-size: 7pt;
+  position: relative;
+  left: 5px;
+  font-style: italic;
+  border-bottom-right-radius: 7px;
+  border-top-right-radius: 7px;
+  transition: all .25s ease;
+}
+
+
+.flair-androidwear {
+  background-color: #77c159;
+}
+
+.flair-androidwear:after {
+  /*content: "User";
+  background-color: #63a548;*/
+}
+
+
+/* MOTO 360 BLACK */
+.flair-moto360black {
+  background-color: #555555;
+}
+.flair-moto360black:after {
+  /*content: "Owner";
+  background-color: #000000;*/
+}
+
+
+/* MOTO 360 SILVER */
+.flair-moto360silver {
+  background-color: #C0C0C0;
+}
+.flair-moto360silver:after {
+  /*content: "Owner";
+  background-color: #b0b0b0;*/
+}
+
+
+/* MOTO 360 GOLD */
+.flair-moto360gold {
+  background-color: #f5cf06;
+}
+.flair-moto360gold:after {
+  /*content: "Owner";
+  background-color: #dab802;*/
+}
+
+
+/* MOTO EMPLOYEE */
+.flair-motoemployee {
+  background-color: #5c92fa;
+}
+.flair-motoemployee:after {
+  content: "Moto";
+  background-color: #4171cd;
+}
+
+
+/* GOOGLE EMPLOYEE */
+.flair-googleemployee {
+  background-color: #9b59b6;
+}
+.flair-googleemployee:after {
+  /*content: "Employee";
+  background-color: #8e44ad;*/
+}
